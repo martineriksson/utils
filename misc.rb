@@ -9,6 +9,22 @@ class Hash
 
 end
 
+class Fixnum
+  
+  # Alias for self % 2 == 0
+  #
+  def is_even?
+    self % 2 == 0
+  end
+
+  # Alias for self % 2 == 1
+  #
+  def is_odd?
+    self % 2 == 1
+  end
+
+end
+
 class String
   
   # This aims to compact strings to more generic versions (for later comparisons)
