@@ -1,6 +1,6 @@
 
-A little place where I keep little utilities
-============================================
+Contents
+========
 
 * Metaprogramming helpers
 * Timer/Ticker (keeps time and ticks analysis output during iterations).
@@ -11,22 +11,21 @@ Metaprogramming
 ---------------
 
 - Singleton class methods, singleton_eval, singleton_def etc
-    Object#singleton_class
-    Object#singleton_eval
-    Object#singleton_def
+  - Object#singleton_class
+  - Object#singleton_eval
+  - Object#singleton_def
 - to_class for strings and symbols
-    String#to_class
-    Symbol#to_class
+  - String#to_class
+  - Symbol#to_class
 - On-the-fly Error classes
-    Object#constant_missing
+  - Object#constant_missing
 - Misc.
-    Class#descendants
+  - Class#descendants
 
 Timer
 -----
 
-- Keeps time
-- Generates continous logging output during iterations
+Keeps time and generates continous logging output during iterations:
 
     timer = Timer.start "loading data"
     something do |etc|
