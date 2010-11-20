@@ -1,12 +1,14 @@
 
-A little place where I keep little utilities.
+A little place where I keep little utilities
+============================================
 
-- Metaprogramming helpers
-- Timer/Ticker (keeps time and ticks analysis output during iterations).
-- Logger 
-- ts - helpers for working with tab separated files.
+* Metaprogramming helpers
+* Timer/Ticker (keeps time and ticks analysis output during iterations).
+* Logger 
+* ts - helpers for working with tab separated files.
 
 Metaprogramming
+---------------
 
 - Singleton class methods, singleton_eval, singleton_def etc
     Object#singleton_class
@@ -21,6 +23,7 @@ Metaprogramming
     Class#descendants
 
 Timer
+-----
 
 - Keeps time
 - Generates continous logging output during iterations
@@ -30,7 +33,6 @@ Timer
     	#some code
     	timer.tick
     end
-    
     timer.stop
 
 This outputs:
@@ -44,5 +46,7 @@ This outputs:
     Finished loading data: 93114 items in 1 m (1003/s)
 
 Logger
+------
 
 Tab separated data helpers
+--------------------------
