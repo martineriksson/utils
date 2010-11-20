@@ -25,6 +25,14 @@ class Fixnum
 
 end
 
+class Array
+  
+  def random
+    self[rand(self.length)]
+  end
+  
+end
+
 class String
   
   # This aims to compact strings to more generic versions (for later comparisons)
