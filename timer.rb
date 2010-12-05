@@ -6,7 +6,8 @@ module Util
   class Timer
     
     def initialize(name, resolution)
-      @name, @resolution = name, resolution
+      @name = name
+      @resolution = resolution
       @started = Time.now
       reset
       log "- Started #{@name} at #{@started}"
@@ -21,7 +22,8 @@ module Util
     # Resets the current iteration tracking.
     #
     def reset
-      @ticks, @last_tick = 0, Time.now
+      @ticks = 0
+      @last_tick = Time.now
     end
 
     # Registers a step in the iteration being tracked.
