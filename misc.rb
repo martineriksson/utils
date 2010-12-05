@@ -26,11 +26,15 @@ class Fixnum
 end
 
 class Array
-  
   def random
-    self[rand(self.length)]
-  end
-  
+    self[rand self.length]
+  end  
+end
+
+class Hash
+  def random
+    self[self.keys.random]
+  end  
 end
 
 class String
@@ -41,7 +45,7 @@ class String
     crunched = self.dup
     crunched.downcase!
     [" ", "-", "'", ",", "/", " and ", "&", " of "].each { |s| crunched.gsub!(s, '') }
-    # This should be done with a regexp, removing everyting except /a-z/
+    # Should be something like: self.gsub( /[^a-zA-Z]/, '' ).downcase
     crunched
   end
 
