@@ -10,7 +10,7 @@ Contents
 Metaprogramming
 ---------------
 
-- Singleton class methods, singleton_eval, singleton_def etc
+- Singleton class methods:
   - Object#singleton_class
   - Object#singleton_eval
   - Object#singleton_def
@@ -40,8 +40,8 @@ This outputs:
     - loading data 1000 1046/s.
     - loading data 2000 3200/s.
     ...
-    - parsing TSV file 80000 669/s.
-    - parsing TSV file 90000 485/s.
+    - loading data 80000 669/s.
+    - loading data 90000 485/s.
     Finished loading data: 93114 items in 1 m (1003/s)
 
 Logger
